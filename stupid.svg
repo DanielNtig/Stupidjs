@@ -1,120 +1,44 @@
-<svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg">
-   <rect width="300" height="100" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
-   <script type="text/javascript">
-      alert("All your cookies are belong to us!");
-      var style = document.createElement('style');
-style.innerHTML=`* {
-    background: red;
-    background: -webkit-linear-gradient(left, red, orange, #ff0, green, #0ff, #00f, violet);
-    background: -o-linear-gradient(right, red, orange, #ff0, green, #0ff, #00f, violet);
-    background: -moz-linear-gradient(right, red, orange, #ff0, green, #0ff, #00f, violet);
-    background: linear-gradient(to right, red, orange, #ff0, green, #0ff, #00f, violet);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation-name: example;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease;
-}
-@keyframes example {
-    0% {
-        background: red;
-        background: -webkit-linear-gradient(left, red, orange, #ff0, green, #0ff, #00f, violet);
-        background: -o-linear-gradient(right, red, orange, #ff0, green, #0ff, #00f, violet);
-        background: -moz-linear-gradient(right, red, orange, #ff0, green, #0ff, #00f, violet);
-        background: linear-gradient(to right, red, orange, #ff0, green, #0ff, #00f, violet);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    14.29% {
-        background: orange;
-        background: -webkit-linear-gradient(left, orange, #ff0, green, #0ff, #00f, violet, red);
-        background: -o-linear-gradient(right, orange, #ff0, green, #0ff, #00f, violet, red);
-        background: -moz-linear-gradient(right, orange, #ff0, green, #0ff, #00f, violet, red);
-        background: linear-gradient(to right, orange, #ff0, green, #0ff, #00f, violet, red);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    28.57% {
-        background: #ff0;
-        background: -webkit-linear-gradient(left, #ff0, green, #0ff, #00f, violet, red, orange);
-        background: -o-linear-gradient(right, #ff0, green, #0ff, #00f, violet, red, orange);
-        background: -moz-linear-gradient(right, #ff0, green, #0ff, #00f, violet, red, orange);
-        background: linear-gradient(to right, #ff0, green, #0ff, #00f, violet, red, orange);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    42.86% {
-        background: green;
-        background: -webkit-linear-gradient(left, green, #0ff, #00f, violet, red, orange, #ff0);
-        background: -o-linear-gradient(right, green, #0ff, #00f, violet, red, orange, #ff0);
-        background: -moz-linear-gradient(right, green, #0ff, #00f, violet, red, orange, #ff0);
-        background: linear-gradient(to right, green, #0ff, #00f, violet, red, orange, #ff0);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    57.14% {
-        background: #0ff;
-        background: -webkit-linear-gradient(left, #0ff, #00f, violet, red, orange, #ff0, green);
-        background: -o-linear-gradient(right, #0ff, #00f, violet, red, orange, #ff0, green);
-        background: -moz-linear-gradient(right, #0ff, #00f, violet, red, orange, #ff0, green);
-        background: linear-gradient(to right, #0ff, #00f, violet, red, orange, #ff0, green);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    71.43% {
-        background: #00f;
-        background: -webkit-linear-gradient(left, #00f, violet, red, orange, #ff0, green, #0ff);
-        background: -o-linear-gradient(right, #00f, violet, red, orange, #ff0, green, #0ff);
-        background: -moz-linear-gradient(right, #00f, violet, red, orange, #ff0, green, #0ff);
-        background: linear-gradient(to right, #00f, violet, red, orange, #ff0, green, #0ff);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    85.71% {
-        background: violet;
-        background: -webkit-linear-gradient(left, violet, red, orange, #ff0, green, #0ff, #00f);
-        background: -o-linear-gradient(right, violet, red, orange, #ff0, green, #0ff, #00f);
-        background: -moz-linear-gradient(right, violet, red, orange, #ff0, green, #0ff, #00f);
-        background: linear-gradient(to right, violet, red, orange, #ff0, green, #0ff, #00f);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    100% {
-        background: red;
-        background: -webkit-linear-gradient(left, red, orange, #ff0, green, #0ff, #00f, violet);
-        background: -o-linear-gradient(right, red, orange, #ff0, green, #0ff, #00f, violet);
-        background: -moz-linear-gradient(right, red, orange, #ff0, green, #0ff, #00f, violet);
-        background: linear-gradient(to right, red, orange, #ff0, green, #0ff, #00f, violet);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-}
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 
-
-img, span, li , canvas, button, input, h1,h2,h3,h4,h5{
-  animation-name: spin;
-  animation-duration: 5000ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear; 
-}
-
-@keyframes spin {
-    from {
-        transform:rotate(0deg);
-    }
-    to {
-        transform:rotate(360deg);
-    }
-}
-`;
-
-var ref = document.querySelector('script');
-ref.parentNode.insertBefore(style, ref);
-var iframe = document.createElement('iframe');
-iframe.style.display = "none";
-iframe.src = "https://www.youtube.com/embed/B-N1yJyrQRY?autoplay=1";
-iframe.allow = "autoplay";
-document.body.appendChild(iframe);
-   </script>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="750"
+   height="200"
+   viewBox="0 0 198.4375 52.916666"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="logo.svg"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-9.8676114,4.8833333)">
+    <path
+       sodipodi:type="star"
+       id="path3725-5"
+       sodipodi:sides="6"
+       sodipodi:cx="104.14816"
+       sodipodi:cy="-16.792293"
+       sodipodi:r1="7.333178"
+       sodipodi:r2="6.350718"
+       sodipodi:arg1="1.0502155"
+       sodipodi:arg2="1.5738143"
+       inkscape:flatsided="true"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 107.79557,-10.430538 -7.33315,-0.02213 -3.647402,-6.361755 3.685742,-6.339624 7.33314,0.02213 3.64741,6.361756 z"
+       style="fill:#131f6b;fill-opacity:1;stroke-width:0.05937638"
+       transform="scale(1,-1)" />
+  <!-- The below lines were added in a text editor to the image XML. This is the stored XSS attack. -->
+  <script type="text/javascript">
+    alert("This is an example of a stored XSS attack in an SVG image")
+  </script>
+  </g>
 </svg>
