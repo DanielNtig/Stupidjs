@@ -113,7 +113,7 @@
           </stop>
         </linearGradient>
 </defs>
-	<script>
-		alert("All your cookies are belong to us!");
-	</script>
+<script>
+	alert("All your cookies are belong to us!");
+</script>
 </svg>
